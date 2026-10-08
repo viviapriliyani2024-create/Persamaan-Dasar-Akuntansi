@@ -3,31 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persamaan Dasar Akuntansi</title>
+    <title>Interaktif - Persamaan Dasar Akuntansi</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-        .container { background-color: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); max-width: 600px; width: 90%; }
-        h1 { color: #2c3e50; text-align: center; }
-        .rumus { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 10px; text-align: center; font-size: 24px; font-weight: bold; margin: 20px 0; }
-        ul { line-height: 1.8; color: #34495e; font-size: 16px; }
-        .btn { display: block; width: 100%; text-align: center; background-color: #3498db; color: white; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-top: 20px; transition: 0.3s; box-sizing: border-box;}
-        .btn:hover { background-color: #2980b9; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .rumus-box {
+            background-color: #dbeafe;
+            color: #1e3a8a;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            border-left: 5px solid #2563eb;
+            margin: 20px 0;
+        }
+        .question {
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li { margin: 10px 0; }
+        .options label {
+            display: block;
+            padding: 12px 15px;
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .options label:hover {
+            background: #e2e8f0;
+            border-color: #94a3b8;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 30px;
+        }
+        button:hover { background: #1d4ed8; }
+        #hasil-kuis {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Persamaan Dasar Akuntansi</h1>
-        <p style="text-align: center; color: #7f8c8d;">Memahami prinsip dasar pencatatan keuangan perusahaan.</p>
-        
-        <div class="rumus">HARTA = UTANG + MODAL</div>
-        
-        <ul>
-            <li><b>Harta (Aset):</b> Kekayaan yang dimiliki (Kas, Gedung, Peralatan).</li>
-            <li><b>Utang (Kewajiban):</b> Tanggung jawab kepada pihak luar.</li>
-            <li><b>Modal (Ekuitas):</b> Hak milik dari pemilik perusahaan.</li>
-        </ul>
-        
-        <a href="#" class="btn">Mulai Belajar</a>
+
+    <div class="header">
+        <h1>Belajar Persamaan Dasar Akuntansi</h1>
+        <p>Materi Interaktif & Evaluasi</p>
     </div>
+
+    <div class="container">
+        <!-- Bagian Materi -->
+        <div class="card">
+            <h2>📖 Materi Singkat</h2>
+            <p>Persamaan dasar akuntansi adalah prinsip yang menunjukkan keseimbangan antara kekayaan (harta) perusahaan dengan sumber pembelanjaannya (utang dan modal).</p>
+            
+            <div class="rumus-box">
+                HARTA = UTANG + MODAL
+            </div>
+            
+            <ul>
+                <li><b>Harta (Aset):</b> Segala kekayaan yang dimiliki perusahaan (contoh: Kas, Piutang, Peralatan, Perlengkapan, Gedung).</li>
+                <li><b>Utang (Kewajiban):</b> Tanggung jawab perusahaan kepada pihak ketiga (kreditur).</li>
+                <li><b>Modal (Ekuitas):</b> Hak milik dari pemilik perusahaan atas kekayaan tersebut.</li>
+            </ul>
+        </div>
+
+        <!-- Bagian Kuis -->
+        <div class="card">
+            <h2>📝 Kuis Evaluasi</h2>
+            <p style="color: #64748b;">Pilih jawaban yang paling tepat di bawah ini!</p>
+
+            <div id="quiz">
+                <div class="question">1. Rumus persamaan dasar akuntansi yang benar adalah...</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q1" value="a"> Harta = Utang - Modal</label></li>
+                    <li><label><input type="radio" name="q1" value="b"> Harta = Utang + Modal</label></li>
+                    <li><label><input type="radio" name="q1" value="c"> Modal = Harta + Utang</label></li>
+                </ul>
+                
+                <div class="question">2. Akun Kas, Piutang, dan Peralatan termasuk ke dalam golongan...</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q2" value="a"> Harta</label></li>
+                    <li><label><input type="radio" name="q2" value="b"> Utang</label></li>
+                    <li><label><input type="radio" name="q2" value="c"> Modal</label></li>
+                </ul>
+
+                <div class="question">3. Jika perusahaan membeli peralatan secara tunai, pengaruhnya pada persamaan dasar akuntansi adalah...</div>
+                <ul class="options">
+                    <li><label><input type="radio" name="q3" value="a"> Harta bertambah, Utang bertambah</label></li>
+                    <li><label><input type="radio" name="q3" value="b"> Harta (Peralatan) bertambah, Harta (Kas) berkurang</label></li>
+                    <li><label><input type="radio" name="q3" value="c"> Modal bertambah, Harta berkurang</label></li>
+                </ul>
+            </div>
+
+            <button onclick="hitungNilai()">Cek Nilai Saya</button>
+            <div id="hasil-kuis"></div>
+        </div>
+    </div>
+
+    <!-- Script Logika Kuis -->
+    <script>
+        function hitungNilai() {
+            let totalSoal = 3;
+            let jawabanBenar = 0;
+            
+            // Mengambil jawaban user
+            let q1 = document.querySelector('input[name="q1"]:checked');
+            let q2 = document.querySelector('input[name="q2"]:checked');
+            let q3 = document.querySelector('input[name="q3"]:checked');
+
+            // Cek apakah semua sudah dijawab
+            if (!q1 || !q2 || !q3) {
+                alert("Tolong jawab semua pertanyaan terlebih dahulu!");
+                return;
+            }
+
+            // Kunci jawaban: 1=b, 2=a, 3=b
+            if (q1.value === 'b') jawabanBenar++;
+            if (q2.value === 'a') jawabanBenar++;
+            if (q3.value === 'b') jawabanBenar++;
+
+            // Hitung nilai (skala 100)
+            let nilaiAkhir = Math.round((jawabanBenar / totalSoal) * 100);
+            
+            // Tampilkan hasil
+            let hasilDiv = document.getElementById('hasil-kuis');
+            hasilDiv.style.display = 'block';
+            hasilDiv.innerHTML = "Skor Anda: " + nilaiAkhir + " / 100 🎉";
+
+            if (nilaiAkhir === 100) {
+                hasilDiv.style.backgroundColor = "#dcfce3";
+                hasilDiv.style.color = "#166534";
+                hasilDiv.innerHTML += "<br><span style='font-size:14px; font-weight:normal;'>Luar biasa! Pemahamanmu sangat bagus.</span>";
+            } else {
+                hasilDiv.style.backgroundColor = "#fee2e2";
+                hasilDiv.style.color = "#991b1b";
+                hasilDiv.innerHTML += "<br><span style='font-size:14px; font-weight:normal;'>Ayo pelajari materinya lagi dan coba perbaiki jawabanmu!</span>";
+            }
+        }
+    </script>
 </body>
 </html>
